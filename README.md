@@ -1,7 +1,7 @@
 The Golang Omdb API
 =======
-[![Build Status](https://travis-ci.org/ehime/gomdb.svg?branch=master)](https://travis-ci.org/ehime/gomdb)
-[![GoDoc](https://godoc.org/github.com/ehime/go-imdb?status.svg)](https://godoc.org/github.com/ehime/go-imdb)
+[![Build Status](https://travis-ci.org/ehime/gomdb.svg?branch=master)](https://travis-ci.org/ehime/go-omdb)
+[![GoDoc](https://godoc.org/github.com/ehime/go-omdb?status.svg)](https://godoc.org/github.com/ehime/go-omdb)
 
 
 Author: Jd Daniel (dodomeki AT gmail DOT com)
