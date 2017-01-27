@@ -1,6 +1,6 @@
 The Golang Omdb API
 =======
-[![Build Status](https://travis-ci.org/ehime/gomdb.svg?branch=master)](https://travis-ci.org/ehime/go-omdb)
+[![Build Status](https://travis-ci.org/ehime/go-omdb.svg?branch=master)](https://travis-ci.org/ehime/go-omdb)
 [![GoDoc](https://godoc.org/github.com/ehime/go-omdb?status.svg)](https://godoc.org/github.com/ehime/go-omdb)
 
 
@@ -27,27 +27,27 @@ package main
 
 import (
 	"fmt"
-	"github.com/ehime/gomdb"
+	"github.com/ehime/go-omdb"
 )
 
 func main() {
-	query := &gomdb.QueryData{Title: "Macbeth", SearchType: gomdb.MovieSearch}
-	res, err := gomdb.Search(query)
+	query := &omdb.QueryData{Title: "Macbeth", SearchType: omdb.MovieSearch}
+	res, err := omdb.Search(query)
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
 	fmt.Println(res.Search)
 
-	query = &gomdb.QueryData{Title: "Macbeth", Year: "2015"}
-	res2, err := gomdb.MovieByTitle(query)
+	query = &omdb.QueryData{Title: "Macbeth", Year: "2015"}
+	res2, err := omdb.MovieByTitle(query)
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
 	fmt.Println(res2)
 
-	res3, err := gomdb.MovieByImdbID("tt2884018")
+	res3, err := omdb.MovieByImdbID("tt2884018")
 	if err != nil {
 		fmt.Println(err)
 		return

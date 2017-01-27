@@ -1,6 +1,9 @@
-package gomdbpackage gomdb
+package tests
 
-import "testing"
+import (
+	"github.com/ehime/go-omdb/omdb"
+	"testing"
+)
 
 func TestSearch(t *testing.T) {
 	tests := []struct {

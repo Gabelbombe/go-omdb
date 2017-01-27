@@ -1,5 +1,5 @@
-// Package gomdb is a golang implementation of the OMDB API.
-package gomdb
+// Package omdb is a GOLang implementation of the OMDB API.
+package omdb
 
 import (
 	"encoding/json"
